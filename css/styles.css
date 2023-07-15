@@ -6,6 +6,8 @@
   --slate: #434455;
   --cornflower: #e7e9fc;
   --navyblue: #2e2f42;
+  --green: #31d0aa;
+  --lightslate: #8e8f99;
 }
 
 body {
@@ -53,7 +55,6 @@ img {
   padding: 0 15px 0 15px;
 }
 .header-main {
-  height: 72px;
   border-bottom: 1px solid var(--cornflower);
 }
 
@@ -86,7 +87,6 @@ img {
 .main-spisok {
   display: flex;
   gap: 40px;
-  padding-left: 76px;
 }
 .spisok-item {
   padding: 24px 0;
@@ -98,12 +98,12 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
 
 .main-spisok a:hover,
 .main-spisok a:focus {
   color: var(--ocean);
-  text-decoration: underline;
 }
 
 /* Contacts */
@@ -136,10 +136,14 @@ img {
   background: var(--navyblue);
   height: 600px;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
 }
 .main-title {
   max-width: 496px;
-  padding-bottom: 48px;
   color: var(--white);
   text-align: center;
   font-size: 56px;
@@ -147,7 +151,7 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  margin-left: 400px;
+  margin: 0 auto;
 }
 
 /* Button order-service */
@@ -167,7 +171,9 @@ img {
   letter-spacing: 0.64px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-left: 566px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
 }
 .order-service:hover,
 .order-service:focus {
@@ -201,6 +207,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 .sect-two-parag {
   color: var(--slate);
@@ -208,6 +215,12 @@ img {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+}
+.sect-two-item .icon {
+  background-color: var(--cloud);
+  width: 264px;
+  height: 112px;
+  padding: 24px 100px;
 }
 
 /*  Section 3*/
@@ -281,10 +294,65 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
+.title-item .link {
+  display: inline-flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  border-radius: 50%;
+}
+.container-icons {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.title-item .link:hover {
+  background-color: var(--ocean);
+}
+
+/* Customers */
+.customers-page {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--white);
+  margin: 0 auto;
+}
+.customers-title {
+  color: var(--navyblue);
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
+}
+.customers-item .link {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+  width: 168px;
+  height: 88px;
+}
+.customers-item {
+  display: flex;
+  gap: 24px;
+}
+.customers-item .link:hover {
+  border: 1px solid var(--ocean);
+}
+
+.customers-item {
+  display: flex;
+  gap: 24px;
+}
 
 /* Footer */
 .footer-container {
-  padding: 100px 0 100px;
+  display: flex;
+  padding: 100px 0 156px 100px;
   height: 312px;
   background: var(--navyblue);
 }
@@ -315,7 +383,64 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-
+/* Media list */
+.social-media-title {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.media-list {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+  margin-top: 16px;
+}
+.media-list .link {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--ocean);
+}
+.media-list .link:hover {
+  background-color: var(--green);
+}
+/* .media-list {
+  background-color: var(--cornflower);
+  width: 168px;
+  height: 88px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+} */
+/* .social-links {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+.social-links .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #03a9f4;
+}
+.social-links .link:hover {
+    background-color: #fff;
+}
+.social-links .icon {
+fill: #fff;
+}
+.social-links .link:hover .icon {
+    fill: #03a9f4;
+}
+ */
 /* Portfolio */
 
 /* List of button  */
