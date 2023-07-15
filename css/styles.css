@@ -260,6 +260,9 @@ img {
   background-color: var(--white);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-container {
   display: flex;
@@ -391,6 +394,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .media-list {
   display: flex;
   gap: 16px;
@@ -408,39 +412,7 @@ img {
 .media-list .link:hover {
   background-color: var(--green);
 }
-/* .media-list {
-  background-color: var(--cornflower);
-  width: 168px;
-  height: 88px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  border: 1px solid var(--lightslate);
-} */
-/* .social-links {
-  display: flex;
-  gap: 4px;
-  flex-shrink: 0;
-  align-self: flex-end;
-}
-.social-links .link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #03a9f4;
-}
-.social-links .link:hover {
-    background-color: #fff;
-}
-.social-links .icon {
-fill: #fff;
-}
-.social-links .link:hover .icon {
-    fill: #03a9f4;
-}
- */
+
 /* Portfolio */
 
 /* List of button  */
