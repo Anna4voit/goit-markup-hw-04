@@ -36,7 +36,7 @@
           >
           <ul class="main-spisok list">
             <li>
-              <a class="spisok-item link" href="./index.html">Studio</a>
+              <a class="current spisok-item link" href="./index.html">Studio</a>
             </li>
             <li>
               <a class="spisok-item link" href="./portfolio.html">Portfolio</a>
@@ -66,7 +66,28 @@
       <section class="main-content">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="order-service" type="button">Order Service</button>
+          <button data-modal-open class="order-service" type="button">
+            Order Service
+          </button>
+        </div>
+        <!-- Modal window -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p></p>
+            <button data-modal-close class="btn">
+              <img
+                src="./images/close-black.svg"
+                alt="Close"
+                width="8"
+                height="8"
+              />
+              <!-- <span class="menu-btn">
+                <svg class="icon" width="8" heigh="8">
+                  <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+              </span> -->
+            </button>
+          </div>
         </div>
       </section>
 
@@ -464,5 +485,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
