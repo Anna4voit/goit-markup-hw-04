@@ -109,12 +109,15 @@ img {
 .main-spisok a:focus {
   color: var(--ocean);
 }
-.current::after {
+.current:hover::after {
   border-bottom: 4px solid var(--ocean);
   border-radius: 2px;
   content: "";
   display: block;
+  position: relative;
+  top: 20px;
 }
+
 /* Contacts */
 
 .main-contacts {
@@ -585,6 +588,7 @@ img {
   position: relative;
 }
 .btn {
+  cursor: pointer;
   position: absolute;
   top: 20px;
   right: 20px;
