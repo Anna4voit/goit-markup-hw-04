@@ -199,6 +199,79 @@ img {
   background-color: var(--ocean);
 }
 
+/* Modal window */
+.backdrop {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  height: 584px;
+  border-radius: 4px;
+  background: var(--dairy);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  animation-name: backdrop-open;
+  animation-duration: 2000ms;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.main-content {
+  position: relative;
+}
+
+.modal {
+  position: relative;
+}
+.btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--cornflower);
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+@keyframes backdrop-open {
+  0% {
+    /* visibility: visible; */
+    /* transform: scale(0); */
+    opacity: 0;
+  }
+  25% {
+    /* transform: scale(0.25); */
+    opacity: 0.25;
+  }
+  50% {
+    /* transform: scale(0.5); */
+    opacity: 0.5;
+  }
+  72% {
+    /* 75% {
+    transform: scale(0.75); */
+    opacity: 0.75;
+  }
+  100% {
+    /* transform: scale(1); */
+    /* visibility: visible; */
+    opacity: 1;
+  }
+}
+
 /* Section2 */
 .section-two {
   padding-top: 120px;
@@ -560,45 +633,4 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
-}
-
-/* Modal window */
-.backdrop {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 408px;
-  height: 584px;
-  border-radius: 4px;
-  background: var(--dairy);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-}
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-.main-content {
-  position: relative;
-}
-
-.modal {
-  position: relative;
-}
-.btn {
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--cornflower);
-  display: flex;
-  align-items: center;
-  padding: 8px;
 }
