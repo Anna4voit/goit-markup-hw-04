@@ -95,6 +95,7 @@ img {
 }
 .spisok-item {
   padding: 24px 0;
+  color: var(--ocean);
 }
 .main-spisok a {
   color: var(--navyblue);
@@ -395,6 +396,7 @@ img {
 .title-item .link {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   background-color: var(--iris);
@@ -436,8 +438,8 @@ img {
   width: 168px;
   height: 88px;
   color: var(--lightslate);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-item {
   display: flex;
@@ -501,6 +503,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .media-list {
@@ -512,6 +515,7 @@ img {
 .media-list .link {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
