@@ -117,8 +117,18 @@ img {
   color: var(--ocean);
 }
 
-.current::after,
+.current::after {
+  width: 48px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--ocean);
+  border-radius: 2px;
+}
 .current-portfolio::after {
+  width: 66px;
   content: "";
   position: absolute;
   left: 0;
