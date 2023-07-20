@@ -226,13 +226,11 @@ img {
   position: fixed;
   left: 0;
   top: 0;
-  /* transform: translate(-50%, -50%); */
   width: 100%;
   height: 100%;
-  border-radius: 4px;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .backdrop.is-hidden {
@@ -429,14 +427,15 @@ img {
   text-align: center;
   margin-bottom: 72px;
 }
-.customers-item .link {
+.client {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 4px;
   border: 1px solid var(--lightslate);
   width: 168px;
   height: 88px;
-  fill: var(--lightslate);
+  color: var(--lightslate);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -444,10 +443,13 @@ img {
   display: flex;
   gap: 24px;
 }
-
-.customers-item .link:hover {
+.client-icon {
+  fill: currentColor;
+}
+.client:hover,
+.client:focus {
   border: 1px solid var(--ocean);
-  fill: var(--ocean);
+  color: var(--ocean);
 }
 
 /* Footer */
