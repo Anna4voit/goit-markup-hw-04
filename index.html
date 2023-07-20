@@ -70,20 +70,6 @@
             Order Service
           </button>
         </div>
-        <!-- Modal window -->
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <p></p>
-            <button data-modal-close class="btn">
-              <img
-                src="./images/close-black.svg"
-                alt="Close"
-                width="8"
-                height="8"
-              />
-            </button>
-          </div>
-        </div>
       </section>
 
       <!-- Section2-->
@@ -92,10 +78,11 @@
           <h2 class="title-sect-two visually-hidden">Section 2</h2>
           <ul class="list-container list">
             <li class="sect-two-item">
-              <svg class="icon" width="64">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
-
+              <div class="cont-icon">
+                <svg class="icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="sect-two-subtitle">Strategy</h3>
               <p class="sect-two-parag">
                 Our goal is to identify the business problem to walk away with
@@ -103,10 +90,11 @@
               </p>
             </li>
             <li class="sect-two-item">
-              <svg class="icon" width="64">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
-
+              <div class="cont-icon">
+                <svg class="icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="sect-two-subtitle">Punctuality</h3>
               <p class="sect-two-parag">
                 Bring the key message to the brand's audience for the best price
@@ -114,10 +102,11 @@
               </p>
             </li>
             <li class="sect-two-item">
-              <svg class="icon" width="64">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
-
+              <div class="cont-icon">
+                <svg class="icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="sect-two-subtitle">Diligence</h3>
               <p class="sect-two-parag">
                 Research and confirm brands that present the strongest digital
@@ -125,10 +114,11 @@
               </p>
             </li>
             <li class="sect-two-item">
-              <svg class="icon" width="64">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-
+              <div class="cont-icon">
+                <svg class="icon" width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="sect-two-subtitle">Technologies</h3>
               <p class="sect-two-parag">
                 Design practice focused on digital experiences. We bring forth a
@@ -480,7 +470,20 @@
         </div>
       </div>
     </footer>
-
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p></p>
+        <button data-modal-close class="btn">
+          <img
+            src="./images/close-black.svg"
+            alt="Close"
+            width="8"
+            height="8"
+          />
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
