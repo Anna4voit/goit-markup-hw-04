@@ -59,11 +59,13 @@ img {
 }
 .header-main {
   border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-nav {
   display: flex;
-  /* box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+  /* box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
 }
 
@@ -93,10 +95,7 @@ img {
   display: flex;
   gap: 40px;
 }
-.spisok-item {
-  padding: 24px 0;
-  /* color: var(--ocean); */
-}
+
 .spisok-item {
   color: var(--navyblue);
   font-size: 16px;
@@ -104,6 +103,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
   display: inline-block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -235,8 +235,6 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  /* transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .backdrop.is-hidden {
@@ -318,7 +316,6 @@ img {
   align-items: center;
   justify-content: center;
   background-color: var(--cloud);
-  /* width: 264px; */
   height: 112px;
   border-radius: 4px;
   margin-bottom: 8px;
@@ -397,24 +394,34 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  margin-bottom: 8px;
 }
-.title-item .link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+
+.menu-soc {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+.menu-soc-item {
   width: 40px;
   height: 40px;
+}
+.mini-soc {
+  width: 100%;
+  height: 100%;
   background-color: var(--iris);
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-icons {
   display: flex;
-  gap: 24px;
-  margin-top: 8px;
+  justify-content: center;
 }
 
-.title-item .link:hover {
+.mini-soc:hover {
   background-color: var(--ocean);
 }
 
@@ -644,7 +651,7 @@ img {
 .overlay {
   position: absolute;
   top: 0;
-  /* left: 0; */
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -660,15 +667,5 @@ img {
 
 .card-box:hover .overlay,
 .card-bos:focus .overlay {
-  transform: translatey(0);
+  transform: translateY(0%);
 }
-
-/* .overlay p {
-  color: var(--cloud);
-  padding: 10px;
-  margin: 0;
-  font-size: 16px;
-  
-  line-height: 1.5;
-  letter-spacing: 0.32px;
-} */
