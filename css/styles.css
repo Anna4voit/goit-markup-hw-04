@@ -15,7 +15,6 @@ body {
   font-family: "Roboto", sans-serif;
   background: #fff;
   color: var(--slate);
-  /* max-width: 1440px; */
   height: 3451px;
   margin: 0 auto;
 }
@@ -49,14 +48,14 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/* Header */
 .container {
   max-width: 1440px;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
+
+/* Header */
 .header-main {
   border-bottom: 1px solid var(--cornflower);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -170,7 +169,6 @@ img {
 
 /* Main page */
 .main-content {
-  max-width: 1440px;
   background-color: var(--navyblue);
   height: 600px;
   padding: 188px 0;
@@ -368,7 +366,6 @@ img {
 
 /* Our team */
 .our-team {
-  max-width: 1440px;
   background-color: #f4f4fd;
   height: 732px;
   padding: 120px 0;
